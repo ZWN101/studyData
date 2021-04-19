@@ -1,0 +1,1 @@
+`nvm`全名`node.js version management`，顾名思义是一个nodejs的版本管理工具。通过它可以安装和切换不同版本的nodejs。下面列出下载、安装及使用方法。

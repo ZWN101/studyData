@@ -1,0 +1,13 @@
+### 获取元素的几种方法
+
+```js
+//通过id获取
+document.getElementById("");
+//通过标签名获取，返回数组
+document.getElementsByTagName("div")
+//通过class类名获取，返回数组
+document.getElementsByClassName("类名")
+//通过标签的name名获取，返回数组
+document.getElementsByName("name名")
+```
+
