@@ -10,6 +10,19 @@
 
 ### filters——过滤器
 
+```js
+<td>{{value.price | showPrice}}</td>
+
+filters:{
+		showPrice(price){
+			//保留两位小数
+			return "￥"+price.toFixed(2);
+		}
+	},
+```
+
+
+
 ### watch——监听数据
 
 * handler 监听数据的变化

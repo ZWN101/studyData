@@ -25,7 +25,7 @@
 
 npm 存储包文件的服务器在国外，有时候会被墙，速度很慢，所以我们需要解决这个问题。http://npm.taobao.org/ 淘宝的开发团队把 npm 在国内做了一个备份。
 
-1. 安装淘宝的 cnpm：**命令：npm install --global cnpm***
+1. 安装淘宝的 cnpm：**命令：npm install --global cnpm**
 
 在任意目录执行都可以， --global 表示安装到全局，而非当前目录， --global 不能省略，否则不管用
 

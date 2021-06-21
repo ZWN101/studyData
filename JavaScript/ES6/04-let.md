@@ -34,6 +34,31 @@ function func(){
 }
 ```
 
+```js
+var关键字的声明规则有一条，如果是undefined，就不会覆盖 
+function fun(a){
+    var a;
+    console.log(a);
+}
+fun(1000);//1000
+
+function fun1(a){
+    var a=999;
+    console.log(a);
+}
+fun1(222);//999
+
+function fun2(a){
+    a=888;
+    b=123;
+    console.log(888)
+}
+fun2(666);//666
+console.log(b);//123
+```
+
+
+
 ### let的特性
 
 #### 变量不能重复声明
@@ -82,7 +107,7 @@ let height=170;
 
 1. 一定要赋初始值，否则会报错
 
-2. 一帮常量用大写
+2. 一般常量用大写
 
 3. 常量的值不能修改
 

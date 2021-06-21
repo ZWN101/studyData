@@ -22,6 +22,16 @@ history.replaceState({},'','me')   替换
 
 <img src="C:\Users\zhuwanning\AppData\Roaming\Typora\typora-user-images\image-20210108163603338.png" alt="image-20210108163603338" style="zoom:67%;" />
 
+### 路由的两种模式
+
+hash模式 和 history模式
+
+#### 两种模式的区别
+
+hash模式：#/home  改变url不会刷新页面  改变url本质调用location.hash()
+
+hastory模式：/home 改变url不会刷新页面  改变url本质调用history.pushState()/history.replaceState()
+
 ### 什么是路由
 
 ：）访问的网页的路径不出现后缀名（如：.html/.jsp）等的称为路由
@@ -191,6 +201,15 @@ VueRouter源码执行Object.defindePropety()方法，给Vue.prototype添加$rout
 ### keep-alive
 
 * keep-alive是Vue的一个内置组件，可以使被包含的组件保留原有的状态，或避免重新被渲染。router-view也是一个组件，如果被包含在keep-alive里面，所有匹配到路径的视图组件都会被缓存
+
+  ```html
+  <keep-alive>
+      <router-view></router-view>
+  </keep-alive>
+  ```
+
+  
+
 * 当使用了keep-alive后，被路由匹配到的组件就会拥有activated（当前组件活跃）和deactivated（当前组件消失）两个函数<img src="C:\Users\zhuwanning\AppData\Roaming\Typora\typora-user-images\image-20210111114743719.png" alt="image-20210111114743719" style="zoom:67%;" />
 
 
