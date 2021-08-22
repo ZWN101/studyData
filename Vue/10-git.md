@@ -28,6 +28,9 @@ git add . --将所有已修改的文件提交到暂存区
 git commit -m '' --从暂存区提交到本地
 git push [remoteName][localBranchName] --推送远程仓库
 git pull [remoteName][localBranchName] --拉取远程仓库
+
+git push origin(远程仓库的名字) osp-1226(远程仓库的某一分支)
+git pull origin(远程仓库的名字) osp-1266(拉取远程仓库的osp分支的代码到本地)
 ```
 
 #### git status
@@ -36,15 +39,35 @@ git pull [remoteName][localBranchName] --拉取远程仓库
 
 ```
 git branch iss58 --创建新的分支iss58
-git checkout master --切换到master分支
+git checkout master --切换到master分支（如果master）
 git checkout -b iss58 --创建新的分支iss58并切换
 git branch -d iss58 --删除iss58分支
 git merge iss58 --将iss58分支合并到当前分支
+git fetch origin feature-osp-1239 拉取远程feature-osp-1239分支
 ```
 
 * 发布项目用的分支 master
 * 开发项目用的分支 develop
 * 每新增一个功能或者修复某个bug，在develop的分支的基础上新增一个分支进行开发，开发完成之后，到develop分支进行合并merge
+
+内网和外网
+
+```
+git remote add local http://47.100.186.110:6032/root/nchinalife-front.git 具体意义
+```
+
+```
+存储当前更改到本地
+git stash 
+git stash save '注释'
+git stash list
+git stash show@{序号}
+git stash apply@{序号} 应用某个stash,但不会把这个stash从stash list中清除掉
+git stash pop@{序号} 应用某个stash,会把这个stash从stash list中清除掉
+git stash clear 
+git stash drop@stash{序号} 删除某次
+花括号使用转义字符`
+```
 
 
 
